@@ -22,6 +22,7 @@ function playRound(userSelection, computerSelection) {
         return "Invalid user selection. Please choose 'rock', 'paper', or 'scissors'.";
     }
 
+<<<<<<< HEAD
     else {
         if(userSelection === computerSelection ) {
             return "It's a tie!"
@@ -37,4 +38,19 @@ function playRound(userSelection, computerSelection) {
             return `You WIN! ${userSelection} beats ${computerSelection}` ;
         }
     }
+=======
+    if(userSelection === computerSelection ) {
+        return "It's a tie!"
+    }  
+    else if (
+        (userSelection === "Rock" && computerSelection === "Paper") ||
+        (userSelection === "Paper" && computerSelection === "Scissors") ||
+        (userSelection === "Scissors" && computerSelection === "Rock")
+   ) {
+        return `You LOSE! ${computerSelection} beats ${userSelection}` ;
+   }
+   else {
+        return `You WIN! ${userSelection} beats ${computerSelection}` ;
+   }
+>>>>>>> 798d589bcf016cc1552ef459fcc2d92d5f0ea75c
 }

@@ -10,3 +10,6 @@ function  getComputerChoice() {
         return "Scissors" ;
     }
 }
+
+function getUserChoice() {  
+}

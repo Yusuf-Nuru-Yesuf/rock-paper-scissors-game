@@ -67,7 +67,9 @@ function playGame() {
         alert("Congratulations! YOU WON THE GAME!");
     }
     else {
-        alert(`Result : User: ${userScore} vs Computer: ${computerScore}`);
-        alert("Good luck next time! YOU LOST THE GAME");
+        alert(`Final Result : User: ${userScore} vs Computer: ${computerScore}`);
+        alert("Good luck next time! YOU LOST THE GAME!");
     }
 }
+
+playGame()

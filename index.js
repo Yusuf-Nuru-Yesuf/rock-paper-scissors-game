@@ -53,5 +53,21 @@ let userScore = 0;
 let computerScore = 0;
 
 function playGame() {
-   
+    
+    while ( userScore < 5 && computerScore < 5){
+        alert(playRound(getUserChoice(), getComputerChoice()));
+    }
+
+    if (userScore === computerScore) {
+        alert(`Result : User: ${userScore} vs Computer: ${computerScore}`);
+        alert("The Game is Tie!");
+    }
+    else if (userScore > computerScore) {
+        alert(`Result : User: ${userScore} vs Computer: ${computerScore}`);
+        alert("Congratulations! YOU WON THE GAME!");
+    }
+    else {
+        alert(`Result : User: ${userScore} vs Computer: ${computerScore}`);
+        alert("Good luck next time! YOU LOST THE GAME");
+    }
 }

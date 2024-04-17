@@ -51,3 +51,7 @@ function playRound(userSelection, computerSelection) {
 
 let userScore = 0;
 let computerScore = 0;
+
+function playGame() {
+   
+}

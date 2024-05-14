@@ -62,8 +62,20 @@ function playRound(userSelection, computerSelection) {
     }
 }
 
+function playGame () {
+    if (userScore === 5 || computerScore === 5) {
+        if (userScore > computerScore) {
+        messageDisplay.textContent = "GAME OVER! Congratulations! YOU WON THE GAME!";
+    }
+        else {
+        messageDisplay.textContent = "GAME OVER! Good luck next time! YOU LOST THE GAME!";
+    }
+    setTimeout(resetScore, 1000);
+}}
+
 function updateScore() {
     scoreDisplay.textContent = `User: ${userScore} vs Computer: ${computerScore}`;
+    playGame();
 }
 
 function resetScore() {

@@ -1,9 +1,20 @@
+let userScore = 0;
+let computerScore = 0;
+
+const rock = document.querySelector("#rock");
+const paper = document.querySelector("#paper");
+const scissors = document.querySelector("#scissors");
+
+rock.addEventListener("click", () => handleUserSelection("Rock"));
+paper.addEventListener("click", () => handleUserSelection("Paper"));
+scissors.addEventListener("click", () => handleUserSelection("Scissors"));
+
 function  getComputerChoice() {
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
-    if (randomNumber === 1 ){
+    let randomNumber = Math.floor(Math.random() * 3 );
+    if (randomNumber === 0 ){
         return "Rock" ;
     }
-    else if (randomNumber === 2){
+    else if (randomNumber === 1){
         return "Paper" ;
     }
     else{
@@ -11,24 +22,23 @@ function  getComputerChoice() {
     }
 }
 
-function getUserChoice() {
-    let userChoice = prompt("Please enter Rock, Paper or Scissors!") 
-    return userChoice.trim().charAt(0).toUpperCase() + userChoice.trim().substring(1).toLocaleLowerCase();
+function handleUserSelection(userChoice) {
+    
+    const userSelection = userChoice;
+    const computerSelection = getComputerChoice();
+    alert(playRound(userSelection, computerSelection));
+
 }
 
 function playRound(userSelection, computerSelection) {
     
     if (userSelection !== "Rock" && userSelection !== "Paper" && userSelection !== "Scissors" ) {    
-        userScore += 0;
-        computerScore += 0;
         return `Invalid user selection. Please choose 'rock', 'paper', or 'scissors'.
             Result : User: ${userScore} vs Computer: ${computerScore}`;
     }
 
     else {
         if(userSelection === computerSelection ) {
-            userScore += 1;
-            computerScore += 1;
             return `It's a tie!
         Result : User: ${userScore} vs Computer: ${computerScore}`
         }  
@@ -49,5 +59,3 @@ function playRound(userSelection, computerSelection) {
     }
 }
 
-let userScore = 0;
-let computerScore = 0;

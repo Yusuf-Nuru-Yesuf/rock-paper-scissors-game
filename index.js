@@ -65,3 +65,10 @@ function playRound(userSelection, computerSelection) {
 function updateScore() {
     scoreDisplay.textContent = `User: ${userScore} vs Computer: ${computerScore}`;
 }
+
+function resetScore() {
+    userScore = 0;
+    computerScore = 0;
+    scoreDisplay.textContent = `User: ${userScore} vs Computer: ${computerScore}`;
+    messageDisplay.textContent = "Make your selection to start a new game!";
+}

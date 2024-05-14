@@ -9,6 +9,9 @@ rock.addEventListener("click", () => handleUserSelection("Rock"));
 paper.addEventListener("click", () => handleUserSelection("Paper"));
 scissors.addEventListener("click", () => handleUserSelection("Scissors"));
 
+const scoreDisplay = document.querySelector("#result h1");
+const messageDisplay = document.querySelector("#result p");
+
 function  getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3 );
     if (randomNumber === 0 ){
@@ -26,7 +29,10 @@ function handleUserSelection(userChoice) {
     
     const userSelection = userChoice;
     const computerSelection = getComputerChoice();
-    alert(playRound(userSelection, computerSelection));
+    
+    const resultText = playRound(userSelection, computerSelection);
+    messageDisplay.textContent = resultText;
+    updateScore();
 
 }
 
@@ -39,8 +45,7 @@ function playRound(userSelection, computerSelection) {
 
     else {
         if(userSelection === computerSelection ) {
-            return `It's a tie!
-        Result : User: ${userScore} vs Computer: ${computerScore}`
+            return `It's a tie! Both selected ${userSelection}`
         }  
         else if (
             (userSelection === "Rock" && computerSelection === "Paper") ||
@@ -48,14 +53,15 @@ function playRound(userSelection, computerSelection) {
             (userSelection === "Scissors" && computerSelection === "Rock")
         ) {
             computerScore += 1;
-            return `You LOSE! ${computerSelection} beats ${userSelection}
-            Result : User: ${userScore} vs Computer: ${computerScore}` ;
+            return `You LOSE! ${computerSelection} beats ${userSelection}`
         }
         else {
             userScore += 1;
-            return `You WIN! ${userSelection} beats ${computerSelection}
-            Result : User: ${userScore} vs Computer: ${computerScore}`;
+            return `You WIN! ${userSelection} beats ${computerSelection}`
         }
     }
 }
 
+function updateScore() {
+    scoreDisplay.textContent = `User: ${userScore} vs Computer: ${computerScore}`;
+}

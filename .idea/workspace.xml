@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0897dd52-e048-4731-92b6-2e86f8d9a5b0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="0897dd52-e048-4731-92b6-2e86f8d9a5b0" name="Changes" comment="Fix html bug" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +12,25 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "author": "Yusuf-Nuru-Yesuf"
+    }
+  ],
+  "lastFilter": {
+    "author": "Yusuf-Nuru-Yesuf"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:Yusuf-Nuru-Yesuf/rock-paper-scissors-game.git",
+    "accountId": "184505c5-a5d8-4b04-833d-8251bfa50046"
+  }
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/index.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -23,8 +43,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "rps-ui",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/yusuf-yesuf/repos/rock-paper-scissors-game",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -47,10 +71,50 @@
       <workItem from="1714038967613" duration="40000" />
       <workItem from="1714039016382" duration="8000" />
       <workItem from="1715070287447" duration="39000" />
+      <workItem from="1715662501662" duration="3789000" />
     </task>
+    <task id="LOCAL-00001" summary="Create css and link to html">
+      <option name="closed" value="true" />
+      <created>1715662617339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715662617339</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add style to the game">
+      <option name="closed" value="true" />
+      <created>1715662698171</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715662698171</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add style to the game">
+      <option name="closed" value="true" />
+      <created>1715662924380</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715662924380</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fix html bug">
+      <option name="closed" value="true" />
+      <created>1715666282709</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715666282709</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create css and link to html" />
+    <MESSAGE value="Add style to the game" />
+    <MESSAGE value="Fix html bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix html bug" />
   </component>
 </project>
